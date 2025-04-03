@@ -5,7 +5,6 @@ import com.example.harypotedle.dto.CharacterResponseDto;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -30,11 +29,12 @@ public class GameService {
         return characterMapper.toDto(dailyCharacter);
     }
 
-    @Scheduled(cron = "0 0 23 * * ?")
-    public CharacterDto initializeDailyCharacter() {
+    @Scheduled(cron = "0 00 21 * * ?")
+    public void initializeDailyCharacter() {
+        System.out.println("initializeDailyCharacter");
         List<Character> allCharacters = characterRepository.findAll();
         dailyCharacter = allCharacters.get((int) (Math.random() * allCharacters.size()));
-        return characterMapper.toDto(dailyCharacter);
+        characterMapper.toDto(dailyCharacter);
     }
 
     public CharacterResponseDto checkGuess(String guess) {
