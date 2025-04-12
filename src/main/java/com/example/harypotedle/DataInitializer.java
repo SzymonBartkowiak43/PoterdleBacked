@@ -118,7 +118,24 @@ public class DataInitializer implements CommandLineRunner {
                 new Character("Irytek", "Mężczyzna", "Brak", "Duch", 856, "Poltergeist"),
                 new Character("Gellert Grindewald", "Mężczyzna", "Durmstrang", "Czarnoksiężnik", 1883, "Czystej Krwi"),
                 new Character("Arianna Dumbledore", "Kobieta", "Brak", "Brak", 1885, "Półkrwi"),
-                new Character("Wilhelmina Grubbly-Plank", "Kobieta", "Hufflepuff", "Nauczyciel", 1940, "Czystej Krwi")
+                new Character("Wilhelmina Grubbly-Plank", "Kobieta", "Hufflepuff", "Nauczyciel", 1940, "Czystej Krwi"),
+
+                new Character("Aragog", "Mężczyzna", "Brak", "Zwierzę, Zwierzę Magiczne", 1942, "-"),
+                new Character("Hardodziob", "Mężczyzna", "Brak", "Zwierzę, Zwierzę Magiczne", 1977, "-"),
+                new Character("Hedwiga", "Kobieta", "Brak", "Zwierzę, towarzysz, sowa", 1990, "-"),
+                new Character("Krzywołap", "Mężczyzna", "Brak", "Zwierzę, towarzysz", 1985, "-"),
+                new Character("Świstoświnka", "Kobieta", "Brak", "Zwierzę, towarzysz, sowa", 1993, "-"),
+                new Character("Hermes", "Mężczyzna", "Brak", "Zwierzę, towarzysz, sowa", 1988, "-"),
+                new Character("Parszywek", "Mężczyzna", "Brak", "Zwierzę, towarzysz", 1971, "-"),
+                new Character("Puszek", "Mężczyzna", "Brak", "Zwierzę, Zwierzę Magiczne", 1985, "-"),
+                new Character("Teodora", "Kobieta", "Brak", "Zwierzę, towarzysz", 1989, "-"),
+                new Character("Kieł", "Mężczyzna", "Brak", "Zwierzę", 1984, "-"),
+                new Character("Rogogon Węgierski", "Mężczyzna", "Brak", "Zwierzę, Zwierzę magiczne, smok", 1990, "-"),
+                new Character("Szwedzki Krótkopyski", "Mężczyzna", "Brak", "Zwierzę, Zwierzę magiczne, smok", 1991, "-"),
+                new Character("Walijski Zielony", "Mężczyzna", "Brak", "Zwierzę, Zwierzę magiczne, smok", 1989, "-"),
+                new Character("Chiński Ogniomiot", "Mężczyzna", "Brak", "Zwierzę, Zwierzę magiczne, smok", 1992, "-"),
+                new Character("Norbert", "Mężczyzna", "Brak", "Zwierzę, Zwierzę magiczne, smok", 1992, "-"),
+                new Character("Pani Norris", "Kobieta", "Brak", "Zwierzę", 1984, "-")
         );
 
         characterRepository.saveAll(characters);
